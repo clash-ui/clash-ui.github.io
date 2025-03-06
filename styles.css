@@ -1,0 +1,79 @@
+@layer base {
+  @font-face {
+    font-family: 'Supercell magic webfont';
+    src: url('./assets/fonts/Supercell-magic-webfont.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+  }
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  min-height: 100vh;
+  min-width: 100vw;
+
+  background-color: mintcream;
+  /* background-image: url(./assets/clouds.jpg); */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+
+  box-sizing: border-box;
+  overflow: hidden;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-family: 'Supercell magic webfont', sans-serif;
+}
+
+.icon {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+
+  img {
+    width: 2rem;
+    height: 2rem;
+  }
+}
+
+.container {
+  max-width: 30rem;
+  padding-inline: 1rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+
+  h1,
+  p,
+  span {
+    text-align: center;
+    color: mintcream;
+    -webkit-text-stroke: 0.5px black;
+    text-shadow: 0px 2.5px 0px black;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+    color: white;
+    -webkit-text-stroke: 1.5px black;
+    text-shadow: 0px 5.5px 0px black;
+  }
+
+  p span {
+    color: wheat;
+  }
+
+  span {
+    font-size: 1rem;
+  }
+}
